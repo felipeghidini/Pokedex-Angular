@@ -1,4 +1,5 @@
 <div>
-  <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png" alt=""><br>
-  <b>{{} pokemon }</b>
+  <!-- <img src="{{ pegarImagemPokemon() }}" alt="imagem"><br> OBS: A VARIÁVEL PODE SER UTILIZADA DE AMBAS AS FORMAS-->
+  <img [src]="pegarImagemPokemon()" alt="imagem"><br>
+  <b>{{ pokemon }}</b>
 </div>
