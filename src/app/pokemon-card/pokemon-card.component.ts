@@ -1,22 +1,21 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-pokemon-card',
   templateUrl: './pokemon-card.component.html',
   styleUrls: ['./pokemon-card.component.sass']
 })
-export class PokemonCardComponent implements OnInit {
+export class PokemonCardComponent {
 
-  constructor() {
-    this.pokemon = '';
-    this.numero = 0;
-  }
+  // constructor() {
+  //  this.pokemon = '';
+  //  this.numero = 0;
+  // }
 
-  ngOnInit(): void {
-  }
-
-  @Input() pokemon: string;
-  @Input() numero: number;
+  @Input()
+  pokemon: string;
+  @Input()
+  numero: number;
 
   pegarImagemPokemon() {
     const numeroFormatado = this.leadingZero(this.numero);
