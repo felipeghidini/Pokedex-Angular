@@ -7,5 +7,5 @@ import { PokemonService } from '../services/pokemon.service';
   styleUrls: ['./pokemon-list.component.sass']
 })
 export class PokemonListComponent {
-  constructor(public pokemonService: PokemonService) {}
+  constructor(public pokemonService: PokemonService) { }
 }
