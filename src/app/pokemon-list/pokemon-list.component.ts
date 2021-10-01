@@ -6,8 +6,6 @@ import { PokemonService } from '../services/pokemon.service';
   templateUrl: './pokemon-list.component.html',
   styleUrls: ['./pokemon-list.component.sass']
 })
-export class PokemonListComponent   {
-
-  constructor(public pokemonService: PokemonService) { }
-
+export class PokemonListComponent {
+  constructor(public pokemonService: PokemonService) {}
 }

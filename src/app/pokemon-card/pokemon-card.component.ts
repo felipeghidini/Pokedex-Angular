@@ -6,22 +6,15 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./pokemon-card.component.sass']
 })
 export class PokemonCardComponent {
-
-  // constructor() {
-  //  this.pokemon = '';
-  //  this.numero = 0;
-  // }
-
   @Input()
-  pokemon: string;
+  pokemon: string = '';
   @Input()
-  numero: number;
+  numero: number = 0;
 
   pegarImagemPokemon() {
     const numeroFormatado = this.leadingZero(this.numero);
 
-    return `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${numeroFormatado}.png`;
-  }
+    return `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${numeroFormatado}.png`;  }
 
   leadingZero(str: string | number, size = 3): string {
     let s = String(str);
